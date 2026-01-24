@@ -3,7 +3,7 @@
 {
   imports =
     [
-      ./hardware-configuration.nix
+      ./hardware-configuration-t480s.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
