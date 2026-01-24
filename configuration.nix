@@ -23,13 +23,23 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
+      # command line tools :
       tree
       feh
-      alacritty
-      neovim
-      keepassxc
       git
       lazygit
+      lsd
+      bat
+      ripgrep
+
+      # terminal emulators :
+      alacritty
+
+      # text editors / integrated developpment environement :
+      neovim
+
+      # utilities :
+      keepassxc
     ];
   };
 
