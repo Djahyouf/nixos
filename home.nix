@@ -5,6 +5,11 @@
   home.homeDirectory = "/home/leo";
   home.stateVersion = "25.11";
 
+  # i3 config file
+  home.file."${config.home.homeDirectory}/.config/i3/config" = {
+    source = ./i3/config;
+  };
+
   programs.bash = {
     enable = true;
     shellAliases = {
