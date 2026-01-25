@@ -31,6 +31,8 @@
       lsd
       bat
       ripgrep
+      fzf
+      jq
 
       # terminal emulators :
       alacritty
@@ -40,6 +42,9 @@
 
       # utilities :
       keepassxc
+
+      # other :
+      rofi
     ];
   };
 
