@@ -18,6 +18,7 @@
   services.xserver.autorun = true;
   services.xserver.windowManager.i3.enable = true;
   services.displayManager.sddm.enable = true;
+  services.displayManager.autoLogin.user = "leo";
 
   users.users.leo = {
     isNormalUser = true;
