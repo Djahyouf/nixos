@@ -111,6 +111,7 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    xclip
 
     # ---
     # GISTRE specific VHDL
