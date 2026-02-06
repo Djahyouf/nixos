@@ -107,7 +107,7 @@
 
   programs.firefox.enable = true;
 
-  environment.nix.settings.auto-optimise-store = true
+  nix.settings.auto-optimise-store = true;
   environment.systemPackages = with pkgs; [
     vim
     wget
@@ -116,6 +116,8 @@
     # GISTRE specific VHDL
     # Serial
     screen
+    picocom
+    minicom
 
     # Embedded
     arduino
@@ -131,5 +133,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "25.11";
+  nixpkgs.config.allowUnfree = true;
 }
 
