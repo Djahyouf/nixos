@@ -39,6 +39,43 @@
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "leo";
 
+  # ---
+  # GISTRE specific VHDL
+  services.udev.packages = [ pkgs.usb-blaster-udev-rules ];
+  # ---
+
+  # ---
+  # GISTRE specific IOT
+  services = {
+    node-red = {
+      enable = true;
+      openFirewall = true;
+      withNpmAndGcc = true;
+    };
+    mosquitto.enable = true;
+  };
+  # ---
+
+  # ---
+  # GISTRE specific VIRT
+  # Docker
+  virtualisation.docker = {
+    enable = true;
+    rootless.enable = true;
+    enableOnBoot = false;
+  };
+
+  # Libvirtd
+  programs.virt-manager.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    onBoot = "ignore";
+    qemu = {
+      swtpm.enable = true;
+    };
+  };
+  # ---
+
   users.users.leo = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
@@ -70,9 +107,25 @@
 
   programs.firefox.enable = true;
 
+  environment.nix.settings.auto-optimise-store = true
   environment.systemPackages = with pkgs; [
     vim
     wget
+
+    # ---
+    # GISTRE specific VHDL
+    # Serial
+    screen
+
+    # Embedded
+    arduino
+    arduino-cli
+    arduino-ide
+    saleae-logic-2
+
+    # Elec
+    kicad
+    # ---
   ];
 
 
