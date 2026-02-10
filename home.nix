@@ -29,4 +29,19 @@
       };
     };
   };
+
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    plugins = with pkgs.vimPlugins; [
+      plenary-nvim
+      nui-nvim
+      neo-tree-nvim
+      fzf-lua
+      nvim-web-devicons
+    ];
+  };
 }

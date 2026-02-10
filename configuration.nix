@@ -95,7 +95,6 @@
       alacritty
 
       # text editors / integrated developpment environement :
-      neovim
 
       # utilities :
       arandr
