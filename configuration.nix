@@ -98,7 +98,9 @@
       neovim
 
       # utilities :
+      arandr
       keepassxc
+      vesktop
 
       # other :
       rofi
