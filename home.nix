@@ -42,6 +42,7 @@
       neo-tree-nvim
       fzf-lua
       nvim-web-devicons
+      bufferline-nvim
     ];
   };
 }
