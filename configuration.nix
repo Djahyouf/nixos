@@ -132,6 +132,9 @@
     # ---
   ];
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.symbols-only
+  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "25.11";
