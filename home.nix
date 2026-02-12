@@ -18,6 +18,7 @@
       vi = "nvim";
       nrs = "cd ~/NixOs; sudo nixos-rebuild switch --flake .";
       grep = "grep --color=auto";
+      k = "kubectl";
     };
   };
 
