@@ -96,6 +96,9 @@
 
       # text editors / integrated developpment environement :
 
+      # lsp :
+      lua-language-server
+
       # utilities :
       arandr
       keepassxc
