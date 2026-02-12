@@ -44,6 +44,7 @@
       fzf-lua
       nvim-web-devicons
       bufferline-nvim
+      gruvbox-nvim
     ];
   };
 }
