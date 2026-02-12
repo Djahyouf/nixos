@@ -90,11 +90,14 @@
       ripgrep
       fzf
       jq
+      kubectl
+      kubeswitch
 
       # terminal emulators :
       alacritty
 
       # text editors / integrated developpment environement :
+      jetbrains.idea-ultimate
 
       # lsp :
       lua-language-server
