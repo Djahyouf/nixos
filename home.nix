@@ -45,6 +45,8 @@
       nvim-web-devicons
       bufferline-nvim
       gruvbox-nvim
+      nvim-treesitter.withAllGrammars
+      nvim-lspconfig
     ];
   };
 }
