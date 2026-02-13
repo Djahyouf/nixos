@@ -106,6 +106,7 @@
       arandr
       keepassxc
       vesktop
+      parsec-bin
 
       # other :
       rofi
