@@ -48,6 +48,8 @@
       gruvbox-nvim
       nvim-treesitter.withAllGrammars
       nvim-lspconfig
+      nvim-cmp
+      luasnip
     ];
   };
 }
