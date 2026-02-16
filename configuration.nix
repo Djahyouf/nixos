@@ -38,6 +38,8 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "leo";
+  services.gpg-agent.enable = true;
+  services.gpg-agent.pinentryPackage = pkgs.pinentry-gnome3;
 
   # ---
   # GISTRE specific VHDL
@@ -114,6 +116,7 @@
   };
 
   programs.firefox.enable = true;
+  programs.gpg.enable = true;
 
   nix.settings.auto-optimise-store = true;
   environment.systemPackages = with pkgs; [
