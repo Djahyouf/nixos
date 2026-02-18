@@ -114,12 +114,15 @@
   };
 
   programs.firefox.enable = true;
+  programs.gnupg.agent.enable = true;
+  programs.gnupg.agent.pinentryPackage = pkgs.pinentry-gnome3;
 
   nix.settings.auto-optimise-store = true;
   environment.systemPackages = with pkgs; [
     vim
     wget
     xclip
+    gnupg
 
     # ---
     # GISTRE specific VHDL
