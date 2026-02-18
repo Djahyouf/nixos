@@ -6,7 +6,7 @@ let
       name = "leo.habets";
       email = "leo.habets@epita.fr";
 
-    [includeIf "gitdir:${config.home.homeDirectory}/FORGE"]
+    [includeIf "gitdir:${config.home.homeDirectory}/FORGE/"]
       path = "${config.home.homeDirectory}/.gitconfig-forge";
   '';
 in {
