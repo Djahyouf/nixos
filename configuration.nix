@@ -101,6 +101,8 @@
 
       # lsp :
       lua-language-server
+      yaml-language-server
+
 
       # utilities :
       arandr
