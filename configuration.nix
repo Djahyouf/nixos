@@ -109,6 +109,7 @@
       keepassxc
       vesktop
       parsec-bin
+      pavucontrol
 
       # other :
       rofi
